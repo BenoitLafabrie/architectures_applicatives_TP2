@@ -16,9 +16,8 @@ class TaskModel {
   }
 }
 
-class AdvancedTask extends TaskModel {
+class AdvancedTask {
   constructor(description, category) {
-    super();
     this.description = description;
     this.category = category;
   }
