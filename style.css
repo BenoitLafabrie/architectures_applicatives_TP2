@@ -32,7 +32,7 @@ body {
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* Survol de l'élément de la liste */
+/* Survol de l'élément de la liste + focus*/
 #task-list li:hover,
 #task-list li:focus {
     transform: scale(1.05);
