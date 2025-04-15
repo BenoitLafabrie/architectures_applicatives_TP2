@@ -1,6 +1,10 @@
 class TaskModel {
   constructor() {
+    if (TaskModel.instance) {
+      return TaskModel.instance;
+    }
     this.tasks = [];
+    TaskModel.instance = this;
   }
 
   addTask(task) {
@@ -9,6 +13,14 @@ class TaskModel {
 
   getTasks() {
     return this.tasks;
+  }
+}
+
+class AdvancedTask extends TaskModel {
+  constructor(description, category) {
+    super();
+    this.description = description;
+    this.category = category;
   }
 }
 
