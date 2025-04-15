@@ -24,7 +24,7 @@ Le projet est organisé en utilisant le modèle MVC (Model-View-Controller) et c
 
 1. Clonez le repository :
    ```bash
-   git clone <URL_DU_REPOSITORY>
+   git clone https://github.com/BenoitLafabrie/architectures_applicatives_TP2.git
    ```
 2. Ouvrez `index.html` dans un navigateur web.
 
