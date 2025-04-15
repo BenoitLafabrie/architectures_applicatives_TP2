@@ -7,7 +7,8 @@ class TaskController {
     this.view.displayTasks(this.model.getTasks());
   }
 
-  handleAddTask(task) {
+  handleAddTask(description, category) {
+    const task = new AdvancedTask(description, category);
     this.model.addTask(task);
     this.view.displayTasks(this.model.getTasks());
   }
