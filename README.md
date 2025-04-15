@@ -1,4 +1,4 @@
-# Application de Liste de Tâches Évoluée
+# Application de Liste de Tâches
 
 Cette application permet de gérer une liste de tâches avec des fonctionnalités avancées telles que le regroupement par catégories et l'affichage des tâches avec des couleurs spécifiques en fonction de leur catégorie.
 
