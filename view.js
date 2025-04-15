@@ -1,6 +1,6 @@
 class TaskRenderer {
   render(task) {
-    throw new Error("Méthode abstraite");
+    throw new Error("Abstract method");
   }
 }
 
@@ -66,6 +66,7 @@ class TaskView {
     this.taskForm.addEventListener("submit", (event) => {
       event.preventDefault();
       const task = this.taskInput.value;
+      const category = this.taskCategory.value;
       if (task) {
         handler(task, category);
         this.taskInput.value = "";
