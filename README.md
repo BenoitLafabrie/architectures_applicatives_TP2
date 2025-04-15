@@ -32,10 +32,10 @@ Le projet est organisé en utilisant le modèle MVC (Model-View-Controller) et c
 
 1. Ajout de tâches : Utilisez le formulaire pour ajouter une nouvelle tâche. Entrez une description et sélectionnez une catégorie (travail, maison, divers).
 
-2.Affichage des tâches : Les tâches ajoutées seront affichées dans la liste avec une couleur spécifique en fonction de leur catégorie.
+2. Affichage des tâches : Les tâches ajoutées seront affichées dans la liste avec une couleur spécifique en fonction de leur catégorie.
 
 ## Technologies Utilisées
 
-HTML : Structure de la page.
-CSS : Mise en forme de la page.
-JavaScript : Logique de l'application (modèle, vue, contrôleur).
+- HTML : Structure de la page.
+- CSS : Mise en forme de la page.
+- JavaScript : Logique de l'application (modèle, vue, contrôleur).
