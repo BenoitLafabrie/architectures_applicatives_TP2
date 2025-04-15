@@ -31,11 +31,26 @@ body {
     margin-top: 20px;
 }
 
+.form-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
 #task-input {
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
-    width: 70%;
+    width: 50%;
+    margin-right: 10px;
+}
+
+#task-category {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 30%;
+    margin-right: 10px;
 }
 
 button {
@@ -45,8 +60,21 @@ button {
     color: white;
     border-radius: 4px;
     cursor: pointer;
+    width: 20%;
 }
 
 button:hover {
     background-color: #0056b3;
+}
+
+.travail {
+    background-color: #bc0101;
+}
+
+.maison {
+    background-color: #1558d4;
+}
+
+.divers {
+    background-color: #0b8c0d;
 }

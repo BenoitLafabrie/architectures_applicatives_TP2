@@ -13,8 +13,15 @@
         <h1>To-Do List</h1>
         <ul id="task-list"></ul>
         <form id="task-form">
-            <input type="text" id="task-input" placeholder="New task" required>
-            <button type="submit">Add</button>
+            <div class="form-group">
+                <input type="text" id="task-input" placeholder="New task" required>
+                <select id="task-category">
+                    <option value="work">Work</option>
+                    <option value="personal">Personal</option>
+                    <option value="miscellaneous">Miscellaneous</option>
+                </select>
+                <button type="submit">Add</button>
+            </div>
         </form>
     </div>
     <script src="model.js"></script>
