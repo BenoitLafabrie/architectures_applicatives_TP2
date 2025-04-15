@@ -11,6 +11,7 @@ class WorkTaskRenderer extends TaskRenderer {
     const li = document.createElement("li");
     li.textContent = task.description;
     li.className = "work";
+    li.tabIndex = 0;
     return li;
   }
 }
@@ -21,6 +22,7 @@ class PersonalTaskRenderer extends TaskRenderer {
     const li = document.createElement("li");
     li.textContent = task.description;
     li.className = "personal";
+    li.tabIndex = 0;
     return li;
   }
 }
@@ -31,6 +33,7 @@ class MiscellaneousTaskRenderer extends TaskRenderer {
     const li = document.createElement("li");
     li.textContent = task.description;
     li.className = "miscellaneous";
+    li.tabIndex = 0;
     return li;
   }
 }

@@ -28,6 +28,16 @@ body {
     margin: 5px 0;
     padding: 10px;
     border-radius: 4px;
+    color: white;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Survol de l'élément de la liste */
+#task-list li:hover,
+#task-list li:focus {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    outline: none;
 }
 
 /* Formulaire d'ajout de tâche */
