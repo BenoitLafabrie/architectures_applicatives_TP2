@@ -1,3 +1,4 @@
+/* Corps de la page */
 body {
     font-family: Arial, sans-serif;
     background-color: #f0f0f0;
@@ -6,6 +7,7 @@ body {
     text-align: center;
 }
 
+/* Conteneur de l'application */
 #app {
     background-color: #fff;
     padding: 20px;
@@ -15,27 +17,32 @@ body {
     margin: auto;
 }
 
+/* Liste des tâches */
 #task-list {
     list-style-type: none;
     padding: 0;
 }
 
+/* Élément de la liste des tâches */
 #task-list li {
     margin: 5px 0;
     padding: 10px;
     border-radius: 4px;
 }
 
+/* Formulaire d'ajout de tâche */
 #task-form {
     margin-top: 20px;
 }
 
+/* Groupe de champs du formulaire */
 .form-group {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
+/* Champ de saisie pour les tâches */
 #task-input {
     padding: 10px;
     border: 1px solid #ccc;
@@ -44,14 +51,17 @@ body {
     margin-right: 10px;
 }
 
+/* Menu déroulant pour la catégorie des tâches */
 #task-category {
     padding: 10px;
     border: 1px solid #ccc;
     border-radius: 4px;
     width: 30%;
     margin-right: 10px;
+    text-overflow: ellipsis;
 }
 
+/* Bouton d'ajout */
 button {
     padding: 10px;
     border: none;
@@ -62,10 +72,12 @@ button {
     width: 20%;
 }
 
+/* Survol du bouton */
 button:hover {
     background-color: #0056b3;
 }
 
+/* Catégories de tâches */
 .work {
     background-color: #bc0101;
 }
@@ -78,6 +90,7 @@ button:hover {
     background-color: #0b8c0d;
 }
 
+/* Media query pour le responsive */
 @media (max-width: 600px) {
     .form-group {
         flex-direction: column;

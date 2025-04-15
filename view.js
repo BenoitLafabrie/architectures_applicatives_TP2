@@ -1,9 +1,11 @@
+// Classe abstraite
 class TaskRenderer {
   render(task) {
     throw new Error("Abstract method");
   }
 }
 
+// Classe concrète travail
 class WorkTaskRenderer extends TaskRenderer {
   render(task) {
     const li = document.createElement("li");
@@ -13,6 +15,7 @@ class WorkTaskRenderer extends TaskRenderer {
   }
 }
 
+// Classe concrète personel
 class PersonalTaskRenderer extends TaskRenderer {
   render(task) {
     const li = document.createElement("li");
@@ -22,6 +25,7 @@ class PersonalTaskRenderer extends TaskRenderer {
   }
 }
 
+// Classe concrète divers
 class MiscellaneousTaskRenderer extends TaskRenderer {
   render(task) {
     const li = document.createElement("li");
@@ -31,6 +35,7 @@ class MiscellaneousTaskRenderer extends TaskRenderer {
   }
 }
 
+// Classe gestion affichage des tâches + formulaire
 class TaskView {
   constructor() {
     this.app = document.getElementById("app");
@@ -39,7 +44,7 @@ class TaskView {
     this.taskInput = document.getElementById("task-input");
     this.taskCategory = document.getElementById("task-category");
   }
-
+  // Affichage des tâches
   displayTasks(tasks) {
     this.taskList.innerHTML = "";
     tasks.forEach((task) => {
@@ -62,6 +67,7 @@ class TaskView {
     });
   }
 
+  // Liaison gestion d'ajout de tâche-formulaire
   bindAddTask(handler) {
     this.taskForm.addEventListener("submit", (event) => {
       event.preventDefault();
@@ -75,4 +81,5 @@ class TaskView {
   }
 }
 
+// Création instance de la vue
 const taskView = new TaskView();
